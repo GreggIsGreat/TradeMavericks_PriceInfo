@@ -54,7 +54,7 @@ def nas100api():
         print(e)
     finally:
         driver.close()
-    return "Delivered to Teddy"
+    return result
 
 @app.get("/us30")
 def us30api():
@@ -99,7 +99,7 @@ def us30api():
         print(e)
     finally:
         driver.close()
-    return "Delivered to Teddy"
+    return result
 
 @app.get("/ger30")
 def ger30api():
@@ -144,7 +144,7 @@ def ger30api():
         print(e)
     finally:
         driver.close()
-    return "Delivered to Teddy"
+    return result
 
 
 if __name__ == "__main__":
