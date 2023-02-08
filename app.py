@@ -40,14 +40,14 @@ def nas100api():
             data.get("daily low", ""), 
             data.get("daily high", ""))
         
-        # smt = smtplib.SMTP('smtp.gmail.com', 587)
-        # smt.ehlo()
-        # smt.starttls()
-        # smt.login('rttteddy@gmail.com', 'fhaldaiuqtzzkmhh')
-        # smt.sendmail('rttteddy@gmail.com',
-        #                 'rttteddy@gmail.com',
-        #                 f'Subject: TradeMavericks Price Notification!!!!!\n\nNASDAQ100 Price List\n\n{result}')
-        # smt.quit()
+        smt = smtplib.SMTP('smtp.gmail.com', 587)
+        smt.ehlo()
+        smt.starttls()
+        smt.login('rttteddy@gmail.com', 'fhaldaiuqtzzkmhh')
+        smt.sendmail('rttteddy@gmail.com',
+                        'rttteddy@gmail.com',
+                        f'Subject: TradeMavericks Price Notification!!!!!\n\nNASDAQ100 Price List\n\n{result}')
+        smt.quit()
             # print(data)
 
     except Exception as e:
@@ -85,14 +85,14 @@ def us30api():
             data.get("daily low", ""), 
             data.get("daily high", ""))
         
-        # smt = smtplib.SMTP('smtp.gmail.com', 587)
-        # smt.ehlo()
-        # smt.starttls()
-        # smt.login('rttteddy@gmail.com', 'fhaldaiuqtzzkmhh')
-        # smt.sendmail('rttteddy@gmail.com',
-        #                 'rttteddy@gmail.com',
-        #                 f'Subject: TradeMavericks Price Notification!!!!!\n\nUS30 Price List\n\n{result}')
-        # smt.quit()
+        smt = smtplib.SMTP('smtp.gmail.com', 587)
+        smt.ehlo()
+        smt.starttls()
+        smt.login('rttteddy@gmail.com', 'fhaldaiuqtzzkmhh')
+        smt.sendmail('rttteddy@gmail.com',
+                        'rttteddy@gmail.com',
+                        f'Subject: TradeMavericks Price Notification!!!!!\n\nUS30 Price List\n\n{result}')
+        smt.quit()
             # print(data)
 
     except Exception as e:
@@ -130,14 +130,14 @@ def ger30api():
             data.get("daily low", ""), 
             data.get("daily high", ""))
         
-        # smt = smtplib.SMTP('smtp.gmail.com', 587)
-        # smt.ehlo()
-        # smt.starttls()
-        # smt.login('rttteddy@gmail.com', 'fhaldaiuqtzzkmhh')
-        # smt.sendmail('rttteddy@gmail.com',
-        #                 'rttteddy@gmail.com',
-        #                 f'Subject: TradeMavericks Price Notification!!!!!\n\GER30 Price List\n\n{result}')
-        # smt.quit()
+        smt = smtplib.SMTP('smtp.gmail.com', 587)
+        smt.ehlo()
+        smt.starttls()
+        smt.login('rttteddy@gmail.com', 'fhaldaiuqtzzkmhh')
+        smt.sendmail('rttteddy@gmail.com',
+                        'rttteddy@gmail.com',
+                        f'Subject: TradeMavericks Price Notification!!!!!\n\GER30 Price List\n\n{result}')
+        smt.quit()
             # print(data)
 
     except Exception as e:
